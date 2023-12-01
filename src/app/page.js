@@ -1,11 +1,15 @@
-import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import connectDB from '@/lib/mongodb'
+import HomeCard from '@/components/HomeCard'
+import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
 
+export default async function Home() {
 
-export default function Home() {
+  const session = await getServerSession();
 
+  if(session?.user) {
+    redirect('/dashboard')
+  }
   return (
-   <Button variant="link">Test</Button>
+      <HomeCard/>
   )
 }

@@ -1,8 +1,8 @@
 import TopicSelection from "@/components/forms/TopicSelection";
 import React from "react";
 
-async function topic() {
+async function Topic() {
   return <TopicSelection className="absolute"></TopicSelection>;
 }
 
-export default topic;
+export default Topic;

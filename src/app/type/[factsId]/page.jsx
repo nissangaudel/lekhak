@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import React, { useState } from "react";
 import MainTypeInput from "@/components/MainTypeInput";
 import { Keyboard } from "lucide-react";
 import { ShieldAlert } from "lucide-react";
 
-function type({ params }) {
+function Type({ params }) {
   async function getfacts(id) {
     try {
       const res = await fetch(`http://localhost:3000/api/facts/${id}`, {
@@ -55,4 +56,4 @@ function type({ params }) {
   );
 }
 
-export default type;
+export default Type;

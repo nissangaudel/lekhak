@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import React, { useState } from "react";
+import { useState } from "react";
 import MainTypeInput from "@/components/MainTypeInput";
 import { Keyboard } from "lucide-react";
 import { ShieldAlert } from "lucide-react";

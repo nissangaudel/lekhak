@@ -17,7 +17,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Loading from "../loading";
+import Loading from "../Loading";
 import generateFacts from "@/lib/gpt";
 
 function TopicSelection() {

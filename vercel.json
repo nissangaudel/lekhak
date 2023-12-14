@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/auth/callback/google": {
-      "maxDuration": 10
-    }
-  }
-}

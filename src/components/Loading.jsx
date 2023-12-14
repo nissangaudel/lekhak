@@ -11,7 +11,7 @@ const loadingTexts = [
   "Harnessing the collective knowledge of the cosmos...",
   "Igniting the flame of wonder and exploration...",
 ];
-function Loading({finished}) {
+function Loading({ finished }) {
   const [progress, setProgress] = useState(10);
   const [loadingText, setLoadingText] = useState(loadingTexts[0]);
   useEffect(() => {
@@ -44,7 +44,7 @@ function Loading({finished}) {
       <Progress value={progress} className="w-full mt-4" />
       <h1 className="mt-2 text-xl">{loadingText}</h1>
     </div>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

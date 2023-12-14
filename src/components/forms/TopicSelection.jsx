@@ -18,7 +18,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Loading from "../Loading";
-import generateFacts from "@/lib/gpt";
 
 function TopicSelection() {
   const { data: session } = useSession();
